@@ -4,5 +4,5 @@
 <body style="font-family:system-ui;background:#111;color:#eee;padding:2em">Abrindo...
 <script>
 var D="https://grammar-lots-monetary-checklist.trycloudflare.com";var t=location.hash.slice(1);
-location.replace(t?D+"/entrar?t="+encodeURIComponent(t):D+"/");
+location.replace(/^aba=/.test(t)?D+"/#"+t:t?D+"/entrar?t="+encodeURIComponent(t):D+"/");
 </script></body></html>
